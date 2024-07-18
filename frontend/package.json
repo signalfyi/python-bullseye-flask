@@ -1,0 +1,11 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "build": "echo 'Building frontend...' && mkdir -p dist && cp index.js dist/index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
