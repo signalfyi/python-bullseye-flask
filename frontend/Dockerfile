@@ -1,5 +1,5 @@
 # First stage: build stage
-FROM node:14 AS build
+FROM node:14@sha256:a158d3b9b4e3fa813fa6c8c590b8f0a860e015ad4e59bbce5744d2f6fd8461aa AS build
 
 # Set the working directory
 WORKDIR /app
@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build
 
 # Second stage: runtime stage
-FROM node:14-slim
+FROM node:14-slim@sha256:198142146b4c47193348f6415da769bdb5035c16fcab051c38c256a6b48f2e1c
 
 # Set the working directory
 WORKDIR /app
