@@ -1,5 +1,5 @@
 # First stage: build stage
-FROM python:3.10-bullseye AS build
+FROM python:3.10-bullseye@sha256:23740620ef0598763fcfaccaaa0379bcf07f9bfa6c614be4190f67f5ba6b1188 AS build
 
 # Set the working directory
 WORKDIR /app
@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y libpq-dev gcc
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Second stage: runtime stage
-FROM python:3.10-slim-bullseye
+FROM python:3.10-slim-bullseye@sha256:df18be8b62736acb82c386d699fc5a48a7e2ba570b3453c19c72cca83fe41380
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y libpq-dev
