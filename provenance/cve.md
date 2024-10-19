@@ -1,0 +1,39 @@
+## backend/Dockerfile
+
+### Docker Image: python:3.10-bullseye
+| Severity | Count |
+|----------|-------|
+| medium | 675 |
+| high | 322 |
+| critical | 14 |
+| low | 28 |
+| Unknown | 3 |
+
+### Docker Image: python:3.10-slim-bullseye
+| Severity | Count |
+|----------|-------|
+| high | 28 |
+| medium | 30 |
+| critical | 5 |
+| low | 5 |
+
+
+## frontend/Dockerfile
+
+### Docker Image: node:14
+| Severity | Count |
+|----------|-------|
+| medium | 1476 |
+| high | 1160 |
+| critical | 33 |
+| low | 29 |
+| Unknown | 6 |
+
+### Docker Image: node:14-slim
+| Severity | Count |
+|----------|-------|
+| high | 46 |
+| medium | 41 |
+| critical | 7 |
+| low | 5 |
+| Unknown | 4 |
