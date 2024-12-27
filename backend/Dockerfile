@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y libpq-dev gcc
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Second stage: runtime stage
-FROM python:3.10-slim-bullseye
+FROM python:3.10-slim-bullseye@sha256:56fdfc406fdcab116f050b925ad74c9025cddf7bfe063994fd41283c630cb0ce
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y libpq-dev
